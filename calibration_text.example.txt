@@ -1,0 +1,3 @@
+Transformers process sequences of vectors through repeated self attention and feed forward layers. Many neighboring hidden states can become redundant, but similarity alone does not tell us whether replacing two states with one will preserve the final model behavior.
+
+A counterfactual calibration procedure can freeze the original model, perform a proposed token merge at an intermediate layer, run only the remaining layers, and directly measure the resulting change in the model output.
